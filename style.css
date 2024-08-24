@@ -1,0 +1,44 @@
+body{
+    background-image: url(img/road_cut.gif);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.car{
+    margin-top: 30vh;
+    margin-left: 45vh;
+    animation-name: ay;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+ 
+
+}
+@keyframes ay {
+    to{
+        margin-right: 50vh;
+        rotate: 2deg;
+      
+    }
+    from{
+        margin-left: 200px;
+        transform: scale(1.15);
+        rotate: 2deg;
+        
+    }
+    
+}
+@media (max-width:389px) {
+    .car{
+        top: 10vh;
+        right: -10vh;
+        max-width: 80vh;
+        position: fixed;
+        transform: none;
+    }
+    
+}
